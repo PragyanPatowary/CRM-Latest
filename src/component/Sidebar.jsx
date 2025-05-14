@@ -10,7 +10,7 @@ const Sidebar = ({ children }) => {
   // Handle screen resize
   useEffect(() => {
     const checkScreen = () => {
-      const mobile = window.innerWidth <= 768;
+      const mobile = window.innerWidth <= 200;
       setIsMobile(mobile);
       if (mobile) setIsOpen(false);     // Close sidebar on mobile
       else setMobileMenuOpen(false);    // Close mobile menu on desktop

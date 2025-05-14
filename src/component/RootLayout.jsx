@@ -1,8 +1,8 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import Sidebar from './Sidebar'
-import Navbar from './Navbar'
-
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Sidebar from "./Sidebar";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const RootLayout = () => {
   return (
@@ -13,10 +13,11 @@ const RootLayout = () => {
         <main className="flex-1 overflow-auto p-4">
           <Outlet />
         </main>
+
+        <Footer />
       </div>
     </div>
   );
 };
 
-
-export default RootLayout
+export default RootLayout;
